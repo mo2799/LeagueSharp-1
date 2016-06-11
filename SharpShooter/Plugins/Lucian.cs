@@ -19,11 +19,11 @@ namespace SharpShooter.Plugins
         public Lucian()
         {
             _q = new Spell(SpellSlot.Q, 675f, TargetSelector.DamageType.Physical) { MinHitChance = HitChance.High };
-            _w = new Spell(SpellSlot.W, 1000f, TargetSelector.DamageType.Physical) { MinHitChance = HitChance.High };
+            _w = new Spell(SpellSlot.W, 900f, TargetSelector.DamageType.Physical) { MinHitChance = HitChance.High };
             _e = new Spell(SpellSlot.E, 475f);
             _r = new Spell(SpellSlot.R, 1400f);
-            _qExtended = new Spell(SpellSlot.Q, 1100f, TargetSelector.DamageType.Physical);
-            _wNoCollision = new Spell(SpellSlot.W, 1000f, TargetSelector.DamageType.Physical);
+            _qExtended = new Spell(SpellSlot.Q, 900f, TargetSelector.DamageType.Physical);
+            _wNoCollision = new Spell(SpellSlot.W, 900f, TargetSelector.DamageType.Physical);
 
             _qExtended.SetSkillshot(0.5f, 65f, float.MaxValue, false, SkillshotType.SkillshotLine);
             _w.SetSkillshot(0.30f, 55f, 1600f, true, SkillshotType.SkillshotLine);
